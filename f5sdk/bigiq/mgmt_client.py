@@ -60,7 +60,7 @@ class ManagementClient(object):
 
         self._user = kwargs.pop('user', None)
         self._password = kwargs.pop('password', None)
-        self._auth_provider = kwargs.pop('loginProviderName', None)
+        self._auth_provider = kwargs.pop('auth_provider', None)
 
         # account for multiple authentication schemes
         if self._user and self._password:
